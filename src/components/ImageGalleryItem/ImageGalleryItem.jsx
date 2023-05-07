@@ -11,13 +11,6 @@ export class ImageGalleryItem extends Component {
     this.setState(({ isModalOpen }) => ({ isModalOpen: !isModalOpen }));
   };
 
-  // openModal = () => {
-  //   this.setState({ isModalOpen: true });
-  // };
-  // closeModal = () => {
-  //   this.setState({ isModalOpen: false });
-  // };
-
   render() {
     const {
       galleryItem: { webformatURL, largeImageURL, tags },

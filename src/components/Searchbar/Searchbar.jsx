@@ -26,6 +26,7 @@ export default class Searchbar extends Component {
   };
 
   render() {
+    const { searchQuery } = this.state;
     return (
       <SearchbarHeader className="searchbar">
         <Form className="form" onSubmit={this.handleSubmit}>
@@ -36,7 +37,7 @@ export default class Searchbar extends Component {
             autoFocus
             placeholder="Search images and photos"
             name="searchQuery"
-            value={this.state.searchQuery}
+            value={searchQuery}
             onChange={this.handleQueryChange}
           />
 
